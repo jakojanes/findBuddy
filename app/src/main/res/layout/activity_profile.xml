@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="@color/somewhatwhite">
+
+    <ImageView
+        android:id="@+id/profilePictureImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:padding="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/account_circle"
+        app:layout_constraintBottom_toTopOf="@id/interestsScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/interestsScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/editProfileButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilePictureImageView">
+
+        <!-- Interests Container -->
+        <LinearLayout
+            android:id="@+id/interestsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Interests will be dynamically added here -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/editActivitiesButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="152dp"
+        android:text="Edit Activities"
+        android:background="@drawable/button_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@id/editProfileButton"
+        app:layout_constraintTop_toBottomOf="@id/interestsScrollView" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/editProfileButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="220dp"
+        android:text="Edit Profile"
+        android:background="@drawable/button_bg"
+        app:layout_constraintEnd_toStartOf="@id/editActivitiesButton"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/interestsScrollView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logOut"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Logout"
+        android:background="@drawable/button_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/editProfileButton"
+        app:layout_constraintEnd_toStartOf="@+id/editActivitiesButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/editProfileButton"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileButton"
+        android:onClick="logOut"
+        />
+
+    <include
+        layout="@layout/taskbar"
+        android:id="@+id/footerButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

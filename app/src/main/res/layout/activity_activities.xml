@@ -1,0 +1,153 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/somewhatwhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your interests"
+            android:textSize="25dp"
+            android:layout_marginBottom="7dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_adventure_outdoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adventure &amp; Outdoor Activities"
+            android:background="@drawable/border_checkbox"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="7dp"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_arts_culture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arts &amp; Culture"
+            android:background="@drawable/border_checkbox"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="7dp"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_food_drink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food &amp; Drink"
+            android:background="@drawable/border_checkbox"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="7dp"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_fitness_sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitness &amp; Sports"
+            android:background="@drawable/border_checkbox"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="7dp"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_music_performances"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music &amp; Performances"
+            android:background="@drawable/border_checkbox"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="7dp"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_nature_wildlife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nature &amp; Wildlife"
+            android:background="@drawable/border_checkbox"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="7dp"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_nightlife_socializing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nightlife &amp; Socializing"
+            android:background="@drawable/border_checkbox"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="7dp"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_shopping_fashion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shopping &amp; Fashion"
+            android:background="@drawable/border_checkbox"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="7dp"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_technology_gaming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technology &amp; Gaming"
+            android:background="@drawable/border_checkbox"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="7dp"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_travel_sightseeing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel &amp; Sightseeing"
+            android:background="@drawable/border_checkbox"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginStart="7dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSaveActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="30dp"
+            android:text="SAVE"
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
